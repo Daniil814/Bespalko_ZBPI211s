@@ -321,29 +321,7 @@ class Student:
     def __str__(self):
         if hasattr(self, "fullname"): 
             return self.fullname
-       
-
-print("\nЗадача №9: ")
-print()
-
-st1 = Student("Иван", "Иванов", [4, 5, 5])
-print(st1)
-print(st1.greeting())
-print(st1.mean_grade())
-print(st1.is_otlichnik())
-
-print()
-
-st2 = Student("Петр", "Петров")
-print(st2)
-print(st2.greeting())
-print(st2.mean_grade())
-print(st2.is_otlichnik())
-
-print()
-
-print(st1 + st2)
-
+      
 
 #Задача №10
 class MyError(Exception):
@@ -363,13 +341,7 @@ class MyError(Exception):
             return "Вызван класс исключений MyError"
 
 
-print("\nЗадача №10: ")
-try:
-    a = -10
-    if a < 0:
-        raise MyError("Ошибка! Отрицательное число!") 
-except MyError as msg:
-    print(msg)
+
 
 
 
