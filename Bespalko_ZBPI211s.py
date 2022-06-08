@@ -83,6 +83,8 @@ def is_palindrome(string):
             count_equality+=1
         else:
             return "NO"
+        if left > right:
+            break
         left+=1
         right-=1
     return "YES"
